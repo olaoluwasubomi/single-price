@@ -1,0 +1,140 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* max-height:100vh; */
+    width:100%;
+    flex-direction:column;
+    background-color:lightgray;
+}
+.main-card{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    min-height:100vh;
+    width:100%;
+}
+.head{
+    background-color:#fff;
+    width:100%;
+}
+.main-card{
+    display: flex;
+    justify-content: center;
+    width:40%;
+    flex-direction:column;
+}
+.card{
+    display: flex;
+    flex-direction:row;
+}
+.card-item{
+    width:50%;
+}
+.item{
+    margin:25px;
+    width:90%
+}
+.head h2{
+    color:hsl(179, 62%, 43%);
+    font-size:22px;
+}
+.head h4{
+    margin-top:20px;
+    color: hsl(71, 73%, 54%);
+    font-weight:900;
+}
+.head p{
+    color:rgba(0,0,0,.4);
+    margin-top:10px;
+    font-size:16px;
+}
+.item-1{
+    background-color: hsl(160, 50%, 30%)
+}
+.item-2{
+    background-color:  hsl(179, 62%, 43%);
+}
+.card-item h4{
+    color:#fff;
+    font-weight:500;
+}
+.text{
+    margin-top:10px;
+    color:white;
+}
+.number{
+    display: inline-block;
+    font-size:30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+}
+span{
+    margin:0 auto;
+    display: inline-block;
+    color:rgba(0,0,0,.4);
+    margin-top: 20px;
+    margin-left:5px;
+}
+.card-text{
+    color:lightgray;
+    line-height:1.3em;
+}
+.btn{
+    display:inline-block;
+    background-color: hsl(71, 73%, 54%);
+    text-decoration:none;
+    color:#fff;
+    margin-top:30px;
+    padding:10px 80px;
+    text-align: center;
+    font-weight:700;
+    border-radius:3px;
+}
+.attribution{
+    margin-top:40px;
+}
+@media screen and (max-width:500px){
+    body{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        width:100%;
+        flex-direction:column;
+        background-color:lightgray;
+    }
+    .main-card{
+        width:70%;
+        margin:0 auto;
+    }
+    .card{
+        display:flex;
+        flex-direction:column ;
+    }
+    .card-item{
+        width:100%;
+    }
+    .head h2{
+        color:hsl(179, 62%, 43%);
+        font-size:20px;
+    }
+    .head h4{
+        margin-top:10px;
+        color: hsl(71, 73%, 54%);
+        font-weight:600;
+        width:100%;
+    }
+    .head p{
+        color:rgba(0,0,0,.4);
+        margin-top:10px;
+        font-size:12px;
+        width:90%;
+        line-height:1.6em;
+    }
+}
